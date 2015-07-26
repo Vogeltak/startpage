@@ -15,7 +15,11 @@
 
  	 <style type="text/css">
  	 	
-
+ 	 	.content > * {
+ 	 		margin-left: auto;
+ 	 		margin-right: auto;
+ 	 		text-align: center;
+ 	 	}
 
  	 </style>
 
@@ -23,20 +27,34 @@
 
 <body>
 
-	<!-- Accent-colored raised button with ripple -->
-	<!--button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-		Hi
-	</button-->
+	<div class="mdl-layout__container">
+		<div class="mdl-layout mdl-js-layout">
 
-	<div class="mdl-card mdl-shadow--2dp demo-card-wide">
-		<div class="mdl-card__title mdl-color--red">
-			<h2 class="mdl-card__title-text mdl-color-text--white">Search on duckduckgo</h2>
-		</div>
-		<div class="mdl-card__supporting-text">
-			<div class="mdl-textfield mdl-js-textfield">
-				<input class="mdl-textfield__input" type="text" id="search">
-				<label class="mdl-textfield__label" for="search">Search</label>
+		<main class="mdl-layout__content mdl-color--grey-100">
+
+			<div class="mdl-grid content">
+			
+				<div class="mdl-card mdl-shadow--2dp demo-card-wide mdl-cell mdl-cell--3-col">
+					<div class="mdl-card__title mdl-color--red">
+						<h2 class="mdl-card__title-text mdl-color-text--white">Search on duckduckgo</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<div class="mdl-textfield mdl-js-textfield">
+							<input class="mdl-textfield__input" type="text" id="search">
+							<label class="mdl-textfield__label" for="search">Cats</label>
+						</div>
+					</div>
+					<div class="mdl-cared__menu">
+						<a class="mdl-button mdl-color-text--red-800 mdl-js-button mdl-js-ripple-effect">
+							Search
+						</a>
+					</div>
+				</div>
+
 			</div>
+
+		</main>
+
 		</div>
 	</div>
 
