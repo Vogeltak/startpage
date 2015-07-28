@@ -14,21 +14,22 @@
  	 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
  	 <style type="text/css">
- 	 	
+
  	 	.search-widget {
- 	 		margin-left: auto;
- 	 		margin-right: auto;
+ 	 		margin-bottom: 10vh;
+ 	 	}
+
+ 	 	#search-icon {
+			padding-right: 10px;
+		}
+
+ 	 	.links {
+ 	 		text-align: center;
  	 	}
 
  	 	.link {
  	 		display: block;
- 	 		margin-left: auto;
- 	 		margin-right: auto;
  	 	}
-
-		#search-icon {
-			padding-right: 10px;
-		}
 
  	 </style>
 
@@ -43,11 +44,14 @@
 
 			<div class="mdl-grid content">
 			
+				<!-- padder -->
+				<div class="mdl-cell mdl-cell--4-col mdl-cell--1-col-tablet mdl-cell--hide-phone"></div>
+
 				<!--
 				Search widget
 				for searching on ddg
 				-->
-				<div class="search-widget mdl-card mdl-shadow--2dp demo-card-wide mdl-cell mdl-cell--3-col mdl-cell--6-col-tablet mdl-cell--12-col-phone">
+				<div class="search-widget mdl-card mdl-shadow--2dp demo-card-wide mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet mdl-cell--12-col-phone">
 					<div class="mdl-card__title mdl-color--red">
 						<i class="material-icons mdl-color-text--white" id="search-icon">search</i>
 						<h2 class="mdl-card__title-text mdl-color-text--white">Duckduckgo</h2>
@@ -65,13 +69,60 @@
 					</div>
 				</div>
 
-				<div class="links mdl-cell mdl-cell--12-col">
-				
-					<a class="link mdl-button mdl-color-text--purple-300 mdl-js-button mdl-js-ripple-effect mdl-cell mdl-cell--2-col" href="http://www.reddit.com/r/unixporn">/r/Unixporn</a>
-					<a class="link mdl-button mdl-color-text--orange-600 mdl-js-button mdl-js-ripple-effect mdl-cell mdl-cell--2-col" href="https://news.ycombinator.com/">HackerNews</a>
-					<a class="link mdl-button mdl-color-text--orange-800 mdl-js-button mdl-js-ripple-effect mdl-cell mdl-cell--2-col" href="https://soundcloud.com/maximation-1/likes">Soundcloud</a>
+				<!-- padder -->
+				<div class="mdl-cell mdl-cell--4-col mdl-cell--1-col-tablet mdl-cell--hide-phone"></div>
 
-				</div>				
+				<!-- padder -->
+				<div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet mdl-cel--hide-phone"></div>
+
+				<div class="links mdl-card mdl-shadow--2dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
+					<div class="mdl-card__title mdl-color--purple">
+						<h4 class="mdl-card__title-text mdl-color-text--grey-50">Dev</h4>
+					</div>
+					<div class="mdl-card__supporting-text mdl-color-text--grey-900">
+						<a href="https://github.com/" class="link mdl-button">Github</a>
+						<a href="https://bitbucket.org" class="link mdl-button">Bitbucket</a>
+					</div>
+				</div>
+
+				<div class="links mdl-card mdl-shadow--2dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
+					<div class="mdl-card__title mdl-color--pink">
+						<h4 class="mdl-card__title-text mdl-color-text--grey-50">Linux</h4>
+					</div>
+					<div class="mdl-card__supporting-text mdl-color-text--grey-900">
+						<a href="https://wiki.archlinux.org/" class="link mdl-button">Arch wiki</a>
+					</div>
+				</div>
+
+				<div class="links mdl-card mdl-shadow--2dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
+					<div class="mdl-card__title mdl-color--cyan">
+						<h4 class="mdl-card__title-text mdl-color-text--grey-50">News</h4>
+					</div>
+					<div class="mdl-card__supporting-text mdl-color-text--grey-900">
+						<a href="https://news.ycombinator.com/" class="link mdl-button">Hackernews</a>
+						<a href="https://reddit.com" class="link mdl-button">Reddit</a>
+					</div>
+				</div>
+
+				<div class="links mdl-card mdl-shadow--2dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
+					<div class="mdl-card__title mdl-color--green">
+						<h4 class="mdl-card__title-text mdl-color-text--grey-50">Social</h4>
+					</div>
+					<div class="mdl-card__supporting-text mdl-color-text--grey-900">
+						<a href="https://web.telegram.org/#/im" class="link mdl-button">Telegram</a>
+						<a href="https://web.whatsapp.com/" class="link mdl-button">Whatsapp</a>
+					</div>
+				</div>
+
+				<div class="links mdl-card mdl-shadow--2dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
+					<div class="mdl-card__title mdl-color--orange">
+						<h4 class="mdl-card__title-text mdl-color-text--grey-50">Fun</h4>
+					</div>
+					<div class="mdl-card__supporting-text mdl-color-text--grey-900">
+						<a href="https://soundcloud.com/maximation-1/likes" class="link mdl-button">Soundcloud</a>
+						<a class="link mdl-button">Youtube</a>
+					</div>
+				</div>	
 
 			</div>
 
