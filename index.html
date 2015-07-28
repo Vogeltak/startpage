@@ -40,7 +40,7 @@
 	<div class="mdl-layout__container">
 		<div class="mdl-layout mdl-js-layout">
 
-		<main class="mdl-layout__content mdl-color--grey-800">
+		<main class="mdl-layout__content">
 
 			<div class="mdl-grid content">
 			
@@ -51,7 +51,7 @@
 				Search widget
 				for searching on ddg
 				-->
-				<div class="search-widget mdl-card mdl-shadow--2dp demo-card-wide mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet mdl-cell--12-col-phone">
+				<div class="search-widget mdl-card mdl-shadow--6dp demo-card-wide mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet mdl-cell--12-col-phone">
 					<div class="mdl-card__title mdl-color--red">
 						<i class="material-icons mdl-color-text--white" id="search-icon">search</i>
 						<h2 class="mdl-card__title-text mdl-color-text--white">Duckduckgo</h2>
@@ -75,7 +75,7 @@
 				<!-- padder -->
 				<div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet mdl-cel--hide-phone"></div>
 
-				<div class="links mdl-card mdl-shadow--2dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
+				<div class="links mdl-card mdl-shadow--6dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
 					<div class="mdl-card__title mdl-color--purple">
 						<h4 class="mdl-card__title-text mdl-color-text--grey-50">Dev</h4>
 					</div>
@@ -85,7 +85,7 @@
 					</div>
 				</div>
 
-				<div class="links mdl-card mdl-shadow--2dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
+				<div class="links mdl-card mdl-shadow--6dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
 					<div class="mdl-card__title mdl-color--pink">
 						<h4 class="mdl-card__title-text mdl-color-text--grey-50">Linux</h4>
 					</div>
@@ -94,7 +94,7 @@
 					</div>
 				</div>
 
-				<div class="links mdl-card mdl-shadow--2dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
+				<div class="links mdl-card mdl-shadow--6dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
 					<div class="mdl-card__title mdl-color--cyan">
 						<h4 class="mdl-card__title-text mdl-color-text--grey-50">News</h4>
 					</div>
@@ -104,7 +104,7 @@
 					</div>
 				</div>
 
-				<div class="links mdl-card mdl-shadow--2dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
+				<div class="links mdl-card mdl-shadow--6dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
 					<div class="mdl-card__title mdl-color--green">
 						<h4 class="mdl-card__title-text mdl-color-text--grey-50">Social</h4>
 					</div>
@@ -114,7 +114,7 @@
 					</div>
 				</div>
 
-				<div class="links mdl-card mdl-shadow--2dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
+				<div class="links mdl-card mdl-shadow--6dp mdl-color--grey-300 mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
 					<div class="mdl-card__title mdl-color--orange">
 						<h4 class="mdl-card__title-text mdl-color-text--grey-50">Fun</h4>
 					</div>
@@ -134,6 +134,8 @@
 	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
 
 	<script type="text/javascript">
+
+		document.body.style.backgroundImage = 'url(https://unsplash.it/' + window.innerWidth + '/' + window.innerHeight + '/?random&blur)';
 
 		var searchbox = document.getElementById('search');
 		var searchbutton = document.getElementById('button-search')
