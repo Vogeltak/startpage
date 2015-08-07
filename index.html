@@ -10,29 +10,10 @@
 	<title>Startpage</title>
 
  	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
- 	 <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.grey-blue.min.css" />
- 	 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ 	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.grey-blue.min.css" />
+ 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
- 	 <style type="text/css">
-
- 	 	.search-widget {
- 	 		margin-top: 15vh;
- 	 		margin-bottom: 10vh;
- 	 	}
-
- 	 	#search-icon {
-			padding-right: 10px;
-		}
-
- 	 	.search-widget, .links {
- 	 		text-align: center;
- 	 	}
-
- 	 	.link {
- 	 		display: block;
- 	 	}
-
- 	 </style>
+	<link rel="stylesheet" href="style.css"> 	 
 
 </head>
 
@@ -134,29 +115,7 @@
 
 	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
 
-	<script type="text/javascript">
-
-		document.body.style.backgroundImage = 'url(https://unsplash.it/' + window.innerWidth + '/' + window.innerHeight + '/?random&blur)';
-
-		var searchbox = document.getElementById('search');
-		var searchbutton = document.getElementById('button-search')
-
-		searchbox.focus();
-
-		searchbox.onkeypress = function(e) {
-			if (e.keyCode === 13) {
-				search();
-			}
-		}
-
-		searchbutton.addEventListener('click', search, false);
-
-		function search() {
-			var query = searchbox.value;
-			window.location = 'https://duckduckgo.com/?q=' + query;
-		}
-
-	</script>
+	<script type="text/javascript" src="script.js"></script>
 
 </body>
 
