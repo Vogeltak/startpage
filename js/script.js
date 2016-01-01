@@ -4,7 +4,9 @@ document.body.style.background = '#404040';
 var searchbox = document.getElementById('search');
 var searchbutton = document.getElementById('button-search')
 
-searchbox.focus();
+window.onload = function() {
+    var input = searchbox.focus();
+};
 
 searchbox.onkeypress = function(e) {
 	if (e.keyCode === 13) {
